@@ -1,0 +1,116 @@
+    body{
+        background-color: #3b86ff
+    }
+input{
+    width: 240px;
+    text-align: center;
+    font-family: 'Play',sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    outline: none;
+    
+    
+    }
+    button[type=submit]:hover
+{
+    color: #fff;
+    
+}
+.jumbotron{
+    border: 1px solid #e0e0eb;
+    
+    transition: border 0.5s;
+outline: none;
+color: #fff;
+   
+    padding-top: 5%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    
+   
+}
+
+.main{
+    height: 100vh;
+}
+input
+{
+   
+    width: 100%;
+}
+
+
+
+input:hover
+{
+    
+    width: 102%;
+}
+
+
+
+
+
+.fundoo{
+      
+ 
+     font-weight: normal;
+ .f{ 
+     background-color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+     color:#3b86ff;
+ }
+ .u{ background-color: black;
+     font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+     color:#e60000;
+ }
+ .n{background-color: black;
+     font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+     color:#e6ac00;
+ }
+ .d{background-color: black;
+     font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+     color:#3b86ff;
+ }
+ .o{background-color: black;
+     font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+     color:#00cc00;
+ }
+ .o1{background-color: black;
+     font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+     color:#e60000;
+ }
+ 
+ }
+
+ label{
+     color: white;
+ }
+
+.btn{
+    
+ 
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 30px;
+    
+}
+.alert{ 
+    margin: 0%;
+padding:0%;
+    background: transparent;
+    border: none;
+}
