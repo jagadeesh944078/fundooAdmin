@@ -79,4 +79,7 @@ export class DashboardComponent implements OnInit {
     localStorage.clear();
     this.router.navigate(['login'])
   }
+  apporve(){
+    this.router.navigate(['approval'])
+  }
 }

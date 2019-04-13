@@ -2,19 +2,17 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import{ HomeComponent} from './home/home.component';
-import{ ToolbarComponent } from './toolbar/toolbar.component'
 import { from } from 'rxjs';
-import { AddNoteComponent } from './add-note/add-note.component';
+import { ApprovalComponent } from './approval/approval.component';
+import { AuthGuard } from './service/auth/auth.guard';
+
 const routes: Routes = [  { path: '', redirectTo: 'login', pathMatch: 'full' },
 { path: 'login', component: LoginComponent },
-{ path:'dashboard',component:DashboardComponent},
-{ path:'home',component:HomeComponent},
-{ path:'toolbar',component:ToolbarComponent,children:[{path:'addNote',component:AddNoteComponent},]}
+{ path:'dashboard',component:DashboardComponent,canActivate : [AuthGuard]},
+{ path:'approval',component:ApprovalComponent},
 
 
 ]
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
