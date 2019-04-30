@@ -82,4 +82,8 @@ export class DashboardComponent implements OnInit {
   apporve(){
     this.router.navigate(['approval'])
   }
+  cart(){
+    this.router.navigate(['cart'])
+
+  }
 }

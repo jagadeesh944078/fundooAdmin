@@ -16,6 +16,8 @@ import { DisplayComponentComponent } from './display-component/display-component
 import { ApprovalComponent } from './approval/approval.component';
 import { SearchPipe } from './search/search.pipe';
 import {AuthGuard}  from './service/auth/auth.guard';
+import { CartComponent } from './cart/cart.component';
+import { LoaderComponent } from './loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,8 @@ import {AuthGuard}  from './service/auth/auth.guard';
     DisplayComponentComponent,
     ApprovalComponent,
     SearchPipe,
+    CartComponent,
+    LoaderComponent,
   
     ],
   imports: [

@@ -28,7 +28,7 @@ export class ApprovalComponent implements OnInit {
         this.answer.push(data['data'][i])
         console.log(data['data'][i])
       }
-      this.answer = this.answer.reverse()
+      // this.answer = this.answer.reverse()
     })
   }
   home() {
@@ -37,11 +37,17 @@ export class ApprovalComponent implements OnInit {
   approve(id) {
     this.data.approve(id).subscribe(resp => {
       console.log(resp)
+      for(var i=0;i<this.answer.length;i++){
+        this.answer.splice(i,1)
+      }
+      
     })
   }
   reject(id) {
     this.data.reject(id).subscribe(resp => {
       console.log(resp)
+      for(var i=0;i<this.answer.length;i++)
+      this.answer.splice(i,1)
     })
   }
 

@@ -17,4 +17,10 @@ export class DataService {
     console.log(id)
     return this.http.post('questionAndAnswerNotes/reject/'+id,'')
 }
+userCart(){
+  return this.http.getHttp('productcarts/userCartList')
+}
+confirmorder(data){
+  return this.http.post('productcarts/adminCompleteOrder',data)
+}
 }
